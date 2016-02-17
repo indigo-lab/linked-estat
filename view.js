@@ -10,16 +10,16 @@ $(function() {
     "name" : "iframe",
     "width" : "100%",
     "height" : "100%",
-    "src" : "svg.html?" + json.indicator
+    "src" : "svg.html?" + json.indicator + "#" + json.range
   }).appendTo(main);
 
   menu.append($("<h1/>").text(json.title));
   if (json.description) {
     menu.append($("<p/>").text(json.description));
   }
-  // menu.on("mouseover", function() {
-  // $("#iframe")[0].contentDocument.location.hash = "#0,100";
-  // });
+  iframe.on("mouseover", function() {
+    $("#iframe")[0].contentDocument.location.hash = "#" + json.range;
+  });
 
   menu.append($("<div id='buttons'/>"));
 
@@ -34,7 +34,7 @@ $(function() {
       $(this).addClass("on");
       $(".cell").hide();
       $("#" + key).fadeIn();
-      $("#iframe")[0].contentDocument.location.hash = a.hash;
+      $("#iframe")[0].contentDocument.location.hash = a.hash + "&" + json.range;
     }));
 
     var div = $("<div class='cell'/>").attr("id", id);
@@ -65,7 +65,7 @@ $(function() {
     if (a.comment)
       div.append($("<p/>").text(a.comment));
     div.on("mouseover", function() {
-      $("#iframe")[0].contentDocument.location.hash = a.hash;
+      $("#iframe")[0].contentDocument.location.hash = a.hash + "&" + json.range;
       return false;
     });
     div.hide();
