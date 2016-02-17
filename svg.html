@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<title>d3</title>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<style>
+  body{background:black;color:white;}
+  svg{position:absolute;top:0;right:0;margin:0;padding:0;display:block;}
+  #histgram text{fill:white;font-size:6pt;}
+  path.cell{stroke-width:1px;stroke:black;cursor:pointer;}
+  text.area{fill:white;font-size:10pt;}
+  text.year{fill:white;font-size:5pt;}
+  #tick{cursor:pointer;}
+  #list{position:absolute;top:5px;right:5px;font-size:9pt;text-align:right;list-style:none}
+  a{color:orange;}
+  footer{position:absolute;bottom:5px;right:5px;margin:0;padding:0;width:auto;font-size:10pt;text-align:right;}
+</style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hello</title>
+    <defs>
+      <path d="M0,0l6,10h-12z" fill="white" id="tick"/>
+    </defs>
+    <g id="histgram">
+      <use xlink:href="#tick" x="0" y="0" id="tick1"/>
+      <use xlink:href="#tick" x="0" y="0" id="tick2"/>
+      <text x="0" y="0" text-anchor="end" id="min"></text>
+      <text x="0" y="0" text-anchor="start" id="max"></text>
+    </g>
+    <g id="main"></g>
+  </svg>
+  <ul id="list"></ul>
+  <footer></footer>
+  <script src="svg.js"></script>
+</body>
+</html>

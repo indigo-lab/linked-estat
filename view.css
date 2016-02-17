@@ -1,0 +1,77 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  max-width: 30%;
+  overflow-y: auto;
+  font-size: 9pt;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+#menu img{max-width:100%;}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+div.cell {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+div.cell:hover {
+  background: #444;
+}
+
+div.button {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: black;
+  border-radius: 25px;
+  border: 2px solid white;
+  margin: 2px;
+  cursor: pointer;
+}
+
+div.button:hover {
+  background: orange;
+}
+div.button:active {
+  background: brown;
+}
+
+div.button.on {
+  background: white;
+}
