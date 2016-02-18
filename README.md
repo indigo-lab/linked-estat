@@ -26,15 +26,15 @@
 
 ### Sample1
 
-* <http://indigo-lab.github.io/linked-estat/view1.html>
+<http://indigo-lab.github.io/linked-estat/view1.html>
 
-不慮の事故の死者数をベースに、大規模災害の情報を関連付けて表示しています。
+* 不慮の事故の死者数をベースに、大規模災害の情報を関連付けて表示しています。
 
 ### Sample2
 
-* <http://indigo-lab.github.io/linked-estat/view2.html>
+<http://indigo-lab.github.io/linked-estat/view2.html>
 
-年間参考気温をベースに、冷夏・米騒動といったトピックを関連付けて表示しています。
+* 年間参考気温をベースに、冷夏・米騒動といったトピックを関連付けて表示しています。
 
 
 ## ToDo
