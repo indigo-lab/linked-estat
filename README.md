@@ -63,7 +63,7 @@
 
 ## License
 
-* 特別な記載がない限り、このレポジトリのアプリとコンテンツには [LICENSE](https://github.com/indigo-lab/linked-estat/LICENSE) が適用されます
+* 特別な記載がない限り、このレポジトリのアプリとコンテンツには [LICENSE](https://github.com/indigo-lab/linked-estat/blob/gh-pages/LICENSE) が適用されます
 * このサービスは、[政府統計総合窓口(e-Stat)のAPI機能](http://www.e-stat.go.jp/api/)を通じて得られたデータを使用していますが、サービスの内容は国によって保証されたものではありません。
 * このサービスは、[DBpedia Japanese](http://ja.dbpedia.org/) の API 機能を使用しています。この API を通じて取得されたコンテンツおよびデータについては、DBpedia Japanese の定める [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) が適用されます。
 
